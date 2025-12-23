@@ -1,10 +1,5 @@
-import Header from "./components/Header"
-import Hero from './components/Hero'
-import Features from './components/Features'
-// import Testimonials from './components/Testimonials'
-// import CTA from './components/CTA'
-import Footer from './components/Footer'
-import Tech from "./components/Tech"
+import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 
 function App() {
     return (
@@ -14,16 +9,9 @@ function App() {
             <Header />
             <main>
 
-                {/* Герой */}
-                <Hero />
-
-
-                <Features />
-
-                <Tech />
             </main>
 
-
+            {/* Подвал */}
             <Footer />
         </div>
     )

@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.brutal-border {
+    border: 2px solid #000;
+}
+
+.brutal-shadow {
+    box-shadow: 4px 4px 0 #000;
+}
+
+.brutal-shadow-sm {
+    box-shadow: 2px 2px 0 #000;
+}
