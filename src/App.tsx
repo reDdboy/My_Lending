@@ -7,16 +7,15 @@ import Snow from './components/Snow/Snow'
 function App() {
     return (
         <div className="min-h-screen bg-white">
+            {/* Зимний снег */}
+            <Snow />
 
             {/* Шапка */}
             <Header />
+
             <main>
-                <Snow />
-
-
+                {/* Обо мне */}
                 <About />
-
-
             </main>
 
             {/* Подвал */}

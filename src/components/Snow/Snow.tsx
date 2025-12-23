@@ -1,59 +1,49 @@
+"use client"
+
 import { useState, useEffect } from "react";
 import Snowfall from "react-snowfall";
 import { useTheme } from "next-themes";
 
 function Snow() {
     const [showSnow, setShowSnow] = useState(false);
-    const { resolvedTheme } = useTheme();
+    const { theme } = useTheme();
 
     useEffect(() => {
         const checkWinterSeason = () => {
             const today = new Date();
             const currentMonth = today.getMonth() + 1;
 
+            // Показываем снег в декабре, январе, феврале
             if (currentMonth === 12 || currentMonth === 1 || currentMonth === 2) {
-                if (currentMonth === 2) {
-                    const day = today.getDate();
-                    const isLeapYear =
-                        (today.getFullYear() % 4 === 0 && today.getFullYear() % 100 !== 0) ||
-                        (today.getFullYear() % 400 === 0);
-                    const lastDay = isLeapYear ? 29 : 28;
-
-                    if (day <= lastDay) {
-                        setShowSnow(true);
-                        return;
-                    }
-                } else {
-                    setShowSnow(true);
-                    return;
-                }
+                setShowSnow(true);
+            } else {
+                setShowSnow(false);
             }
-            setShowSnow(false);
         };
 
         checkWinterSeason();
+
+        // Проверяем каждый час
         const interval = setInterval(checkWinterSeason, 60 * 60 * 1000);
         return () => clearInterval(interval);
     }, []);
 
     if (!showSnow) return null;
 
-    const isLight = resolvedTheme === "light";
-    const snowColor = isLight ? "#8fc5ffff" : "#ffffff";
+    const snowColor = theme === "light" ? "#7ba5feff" : "#ffffff";
 
     return (
-        <div className="fixed inset-0 pointer-events-none z-0">
+        <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
             <Snowfall
-                key={resolvedTheme}
-                snowflakeCount={100}
-                speed={[0.3, 1.5]}
-                radius={[0.5, 2]}
+                snowflakeCount={150}
+                speed={[0.5, 2]}
+                wind={[-0.5, 0.8]}
+                radius={[0.5, 3.0]}
                 color={snowColor}
-                opacity={[0.1, 0.25]}
                 style={{
-                    position: "absolute",
-                    width: "100%",
-                    height: "100%",
+                    position: 'absolute',
+                    width: '100%',
+                    height: '100%',
                 }}
             />
         </div>
