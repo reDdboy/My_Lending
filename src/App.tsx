@@ -2,6 +2,8 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import About from './components/About/About'
 import Snow from './components/Snow/Snow'
+import Hero from './components/Hero/Hero'
+import Project from './components/Project/Project'
 
 
 function App() {
@@ -14,8 +16,14 @@ function App() {
             <Header />
 
             <main>
+                {/* Блок Герой */}
+                <Hero />
+
                 {/* Обо мне */}
                 <About />
+
+                {/* Блок с проектами */}
+                <Project />
             </main>
 
             {/* Подвал */}
