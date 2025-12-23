@@ -1,5 +1,8 @@
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import About from './components/About/About'
+import Snow from './components/Snow/Snow'
+
 
 function App() {
     return (
@@ -8,6 +11,11 @@ function App() {
             {/* Шапка */}
             <Header />
             <main>
+                <Snow />
+
+
+                <About />
+
 
             </main>
 

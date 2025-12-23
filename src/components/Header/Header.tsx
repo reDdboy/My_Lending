@@ -17,17 +17,17 @@ function Header() {
 
                     {/* Десктопное меню */}
                     <div className="hidden md:flex space-x-8">
-                        <a href="#projects" className="font-medium hover:text-gray-300 transition-colors">
-                            ПРОЕКТЫ
-                        </a>
-                        <a href="#services" className="font-medium hover:text-gray-300 transition-colors">
-                            УСЛУГИ
-                        </a>
                         <a href="#about" className="font-medium hover:text-gray-300 transition-colors">
                             ОБО МНЕ
                         </a>
+                        <a href="#projects" className="font-medium hover:text-gray-300 transition-colors">
+                            ПРОЕКТЫ
+                        </a>
                         <a href="#contact" className="font-medium hover:text-gray-300 transition-colors">
                             КОНТАКТ
+                        </a>
+                        <a href="#tech" className="font-meduim hover:text-gray-300 transition-colors">
+                            ТЕХНОЛОГИИ
                         </a>
                     </div>
 
