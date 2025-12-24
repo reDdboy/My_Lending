@@ -6,7 +6,7 @@ function Header() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
-        <header className="sticky top-0 z-50 bg-white dark:bg-black text-black dark:text-white border-b border-gray-300 dark:border-gray-800 backdrop-blur-sm bg-white/80 dark:bg-black/80">
+        <header className="fixed top-0 w-full z-50 bg-white dark:bg-black text-black dark:text-white border-b border-gray-300 dark:border-gray-800 backdrop-blur-sm bg-white/80 dark:bg-black/80">
             <nav className="container mx-auto px-4 py-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center space-x-2">
