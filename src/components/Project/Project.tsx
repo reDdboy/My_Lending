@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { ExternalLink } from "lucide-react"
 
 function Project() {
     return (
@@ -16,7 +17,10 @@ function Project() {
                         </CardContent>
                         <CardFooter>
                             <Button className="bg-black text-white dark:bg-white dark:text-black border-2">
-                                КНОПКА
+                                <ExternalLink w-4 h-4></ExternalLink>
+                                <a href="link" className="flex">
+                                    Перейти
+                                </a>
                             </Button>
                         </CardFooter>
                     </Card>
@@ -30,7 +34,10 @@ function Project() {
                         </CardContent>
                         <CardFooter>
                             <Button className="bg-black text-white dark:bg-white dark:text-black border-2">
-                                КНОПКА
+                                <ExternalLink w-4 h-4></ExternalLink>
+                                <a href="link" className="flex">
+                                    Перейти
+                                </a>
                             </Button>
                         </CardFooter>
                     </Card>
@@ -44,13 +51,16 @@ function Project() {
                         </CardContent>
                         <CardFooter>
                             <Button className="bg-black text-white dark:bg-white dark:text-black border-2">
-                                КНОПКА
+                                <ExternalLink w-4 h-4></ExternalLink>
+                                <a href="link" className="flex">
+                                    Перейти
+                                </a>
                             </Button>
                         </CardFooter>
                     </Card>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

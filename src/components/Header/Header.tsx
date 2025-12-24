@@ -31,7 +31,6 @@ function Header() {
                             КОНТАКТ
                         </a>
 
-                        {/* Переключатель тем */}
                         <ThemeToggle />
                     </div>
 
