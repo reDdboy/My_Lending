@@ -9,16 +9,16 @@ function Project() {
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
                     <Card className="border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff]">
                         <CardHeader>
-                            <CardTitle className="text-2xl font-black">BRUTAL CARD</CardTitle>
-                            <CardDescription className="font-bold">В брутальном стиле</CardDescription>
+                            <CardTitle className="text-2xl font-black">ДОКУМЕНТАЦИЯ ВКОНКТАКТЕ</CardTitle>
+                            <CardDescription className="font-bold">Сайт с документацией</CardDescription>
                         </CardHeader>
                         <CardContent>
-                            <p>Содержимое карточки в минималистичном стиле</p>
+                            <p>Вместе с командой работаем над реализацией и поддержкой Базы Данных «За Христа Пострадавшие»</p>
                         </CardContent>
                         <CardFooter>
                             <Button className="bg-black text-white dark:bg-white dark:text-black border-2">
                                 <ExternalLink w-4 h-4></ExternalLink>
-                                <a href="link" className="flex">
+                                <a href="https://vkfcsapp.pstgu.ru/" className="flex">
                                     Перейти
                                 </a>
                             </Button>
