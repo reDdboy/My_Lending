@@ -14,10 +14,10 @@ function Hero() {
                     Специализируюсь на брутальном дизайне, где каждый пиксель на счету.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-                    <button className="px-10 py-4 bg-black dark:bg-white text-white dark:text-black text-lg font-bold border-2 border-black dark:border-white hover:translate-x-1 hover:translate-y-1 transition-transform">
+                    <button className="px-10 py-4 bg-black dark:bg-white text-white dark:text-black text-lg font-bold border-2 border-black dark:border-white hover:translate-y-0.5 transition-transform">
                         СМОТРЕТЬ ПРОЕКТЫ
                     </button>
-                    <button className="px-10 py-4 bg-white dark:bg-black text-black dark:text-white text-lg font-bold border-2 border-black dark:border-white hover:translate-x-1 hover:translate-y-1 transition-transform">
+                    <button className="px-10 py-4 bg-white dark:bg-black text-black dark:text-white text-lg font-bold border-2 border-black dark:border-white hover:translate-y-0.5 transition-transform">
                         СВЯЗАТЬСЯ
                     </button>
                 </div>
