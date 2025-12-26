@@ -15,10 +15,14 @@ function Hero() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
                     <button className="px-10 py-4 bg-black dark:bg-white text-white dark:text-black text-lg font-bold border-2 border-black dark:border-white hover:translate-y-0.5 transition-transform">
-                        СМОТРЕТЬ ПРОЕКТЫ
+                        <a href="#projects" className="font-bold items-center justify-center gap-2">
+                            СМОТРЕТЬ ПРОЕКТЫ
+                        </a>
                     </button>
                     <button className="px-10 py-4 bg-white dark:bg-black text-black dark:text-white text-lg font-bold border-2 border-black dark:border-white hover:translate-y-0.5 transition-transform">
-                        СВЯЗАТЬСЯ
+                        <a href="#contact" className="items-center justify-center gap-2">
+                            СВЯЗАТЬСЯ
+                        </a>
                     </button>
                 </div>
             </div>

@@ -30,7 +30,7 @@ function Snow() {
 
     if (!showSnow) return null;
 
-    const snowColor = theme === "light" ? "#7ba5feff" : "#ffffff";
+    const snowColor = theme === "light" ? "#000000ff" : "#ffffffff";
 
     return (
         <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
