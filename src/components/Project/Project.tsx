@@ -16,7 +16,7 @@ function Project() {
                             <p>Вместе с командой работаем над реализацией и поддержкой Базы Данных «За Христа Пострадавшие»</p>
                         </CardContent>
                         <CardFooter className="mt-auto pt-4">
-                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 w-full">
+                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 w-full hover:bg-gray-700 dark:bg-gray-100">
                                 <a href="https://vkfcsapp.pstgu.ru/" className="flex items-center justify-center gap-2">
                                     <ExternalLink className="w-4 h-4" />
                                     Перейти
@@ -33,7 +33,7 @@ function Project() {
                             <p>Содержимое карточки в минималистичном стиле</p>
                         </CardContent>
                         <CardFooter className="mt-auto pt-4">
-                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 w-full">
+                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 w-full hover:bg-gray-700 dark:bg-gray-100">
                                 <a href="link" className="flex items-center justify-center gap-2">
                                     <ExternalLink className="w-4 h-4" />
                                     Перейти
@@ -50,7 +50,7 @@ function Project() {
                             <p>Содержимое карточки в минималистичном стиле</p>
                         </CardContent>
                         <CardFooter className="mt-auto pt-4">
-                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 w-full">
+                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 w-full hover:bg-gray-700 dark:bg-gray-100">
                                 <a href="link" className="flex items-center justify-center gap-2">
                                     <ExternalLink className="w-4 h-4" />
                                     Перейти
