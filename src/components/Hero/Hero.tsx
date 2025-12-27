@@ -7,12 +7,11 @@ function Hero() {
                 </div>
                 <div className="h-2 w-3/4 mx-auto bg-black dark:bg-white"></div>
                 <p className="text-2xl font-bold uppercase tracking-widest">
-                    FULLSTACK РАЗРАБОТЧИК
+                    ВЕБ-РАЗРАБОТЧИК
                 </p>
-                <p className="text-lg max-w-2xl mx-auto font-medium">
-                    Создаю быстрые, минималистичные веб-приложения на React, TypeScript и Node.js.
-                    Специализируюсь на брутальном дизайне, где каждый пиксель на счету.
-                </p>
+                {/* <p className="text-lg max-w-2xl mx-auto font-medium">
+                    Студент факультета информатики и прикладной математики
+                </p> */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
                     <button className="px-10 py-4 bg-black dark:bg-white text-white dark:text-black text-lg font-bold border-2 border-black dark:border-white hover:translate-y-0.5 transition-transform">
                         <a href="#projects" className="font-bold items-center justify-center gap-2">
