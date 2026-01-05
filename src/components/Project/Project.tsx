@@ -13,7 +13,7 @@ function Project() {
                             <CardDescription className="font-bold">Сайт с документацией</CardDescription>
                         </CardHeader>
                         <CardContent className="flex-grow">
-                            <p>Вместе с командой работаем над реализацией и поддержкой Базы Данных «За Христа Пострадавшие»</p>
+                            <p>Вместе с командой работаем над реализацией и поддержкой Базы Данных «За Христа Пострадавшие» для разных платформ</p>
                         </CardContent>
                         <CardFooter className="mt-auto pt-4">
                             <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 w-full hover:bg-gray-700 dark:bg-gray-100">

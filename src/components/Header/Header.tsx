@@ -28,7 +28,7 @@ function Header() {
                             ТЕХНОЛОГИИ
                         </a>
                         <a href="#contact" className="font-bold text-sm uppercase tracking-wider hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
-                            КОНТАКТ
+                            КОНТАКТЫ
                         </a>
 
                         <ThemeToggle />

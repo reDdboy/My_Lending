@@ -5,6 +5,7 @@ import Snow from './components/Snow/Snow'
 import Hero from './components/Hero/Hero'
 import Project from './components/Project/Project'
 import Tech from './components/Tech/Tech'
+import Contact from './components/Contact/Contact'
 
 
 function App() {
@@ -28,6 +29,9 @@ function App() {
 
                 {/* Блок с технологиями */}
                 <Tech />
+
+                {/* Блок с контактами */}
+                <Contact />
             </main>
 
             {/* Подвал */}
