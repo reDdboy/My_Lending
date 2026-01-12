@@ -27,14 +27,13 @@ function Header() {
                         <a href="#tech" className="font-bold text-sm uppercase tracking-wider hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
                             ТЕХНОЛОГИИ
                         </a>
-                        <a href="#contact" className="font-bold text-sm uppercase tracking-wider hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                        <a href="#contacts" className="font-bold text-sm uppercase tracking-wider hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
                             КОНТАКТЫ
                         </a>
 
                         <ThemeToggle />
                     </div>
 
-                    {/* Мобильное меню + переключатель */}
                     <div className="flex items-center space-x-4 md:hidden">
                         <ThemeToggle />
                         <button

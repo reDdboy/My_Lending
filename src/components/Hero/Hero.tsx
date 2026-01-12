@@ -19,7 +19,7 @@ function Hero() {
                         </a>
                     </button>
                     <button className="px-6 md:px-10 py-4 md:py-6 bg-white dark:bg-black text-black dark:text-white text-lg font-bold border-2 border-black dark:border-white hover:translate-y-0.5 transition-transform">
-                        <a href="#contact" className="items-center justify-center gap-2">
+                        <a href="#contacts" className="items-center justify-center gap-2">
                             СВЯЗАТЬСЯ
                         </a>
                     </button>

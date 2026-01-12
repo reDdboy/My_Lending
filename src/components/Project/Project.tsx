@@ -16,8 +16,8 @@ function Project() {
                             <p>Вместе с командой работаем над реализацией и поддержкой Базы Данных «За Христа Пострадавшие» для разных платформ</p>
                         </CardContent>
                         <CardFooter className="mt-auto pt-4">
-                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 w-full hover:bg-gray-700 dark:bg-gray-100">
-                                <a href="https://vkfcsapp.pstgu.ru/" className="flex items-center justify-center gap-2">
+                            <Button asChild className="bg-white dark:bg-black text-black dark:text-white border-2 border-black dark:border-white hover:bg-gray-100 dark:hover:bg-gray-900 w-full py-4 text-base font-bold">
+                                <a href="https://vkfcsapp.pstgu.ru/" target="_blank" rel="noopener norefrrer" className="flex items-center justify-center gap-2">
                                     <ExternalLink className="w-4 h-4" />
                                     Перейти
                                 </a>
@@ -33,8 +33,8 @@ function Project() {
                             <p>Содержимое карточки в минималистичном стиле</p>
                         </CardContent>
                         <CardFooter className="mt-auto pt-4">
-                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 w-full hover:bg-gray-700 dark:bg-gray-100">
-                                <a href="link" className="flex items-center justify-center gap-2">
+                            <Button asChild className="bg-white dark:bg-black text-black dark:text-white border-2 border-black dark:border-white hover:bg-gray-100 dark:hover:bg-gray-900 w-full py-4 text-base font-bold">
+                                <a href="link" target="_blank" rel="noopener norefrrer" className="flex items-center justify-center gap-2">
                                     <ExternalLink className="w-4 h-4" />
                                     Перейти
                                 </a>
@@ -43,15 +43,15 @@ function Project() {
                     </Card>
                     <Card className="flex flex-col h-full border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff]">
                         <CardHeader>
-                            <CardTitle className="text-2xl font-black">BRUTAL CARD</CardTitle>
-                            <CardDescription className="font-bold">В брутальном стиле</CardDescription>
+                            <CardTitle className="text-2xl font-black">TODO LIST</CardTitle>
+                            <CardDescription className="font-bold">Сайт для добавления и удаления задач</CardDescription>
                         </CardHeader>
                         <CardContent className="flex-grow">
-                            <p>Содержимое карточки в минималистичном стиле</p>
+                            <p>Простенький сайт с списком задач на день. Удобный и понятный интерфейс добавления, удаления</p>
                         </CardContent>
                         <CardFooter className="mt-auto pt-4">
-                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 w-full hover:bg-gray-700 dark:bg-gray-100">
-                                <a href="link" className="flex items-center justify-center gap-2">
+                            <Button asChild className="bg-white dark:bg-black text-black dark:text-white border-2 border-black dark:border-white hover:bg-gray-100 dark:hover:bg-gray-900 w-full py-4 text-base font-bold">
+                                <a href="link" target="_blank" rel="noopener norefrrer" className="flex items-center justify-center gap-2">
                                     <ExternalLink className="w-4 h-4" />
                                     Перейти
                                 </a>
