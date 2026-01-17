@@ -19,7 +19,7 @@ function Snow() {
             } else {
                 setShowSnow(false);
             }
-        };
+        }; 1
 
         checkWinterSeason();
 
@@ -35,7 +35,7 @@ function Snow() {
     return (
         <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
             <Snowfall
-                snowflakeCount={150}
+                snowflakeCount={100}
                 speed={[0.5, 2]}
                 wind={[-0.5, 0.8]}
                 radius={[0.5, 3.0]}

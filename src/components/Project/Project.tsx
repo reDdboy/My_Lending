@@ -5,6 +5,12 @@ import { ExternalLink } from "lucide-react"
 function Project() {
     return (
         <section id="projects" className="container mx-auto px-4 py-20 ">
+            <div className="text-center mb-12">
+                <h2 className="text-5xl md:text-6xl font-black mb-4 text-black">ПРОЕКТЫ</h2>
+                <div className="h-1 w-48 mx-auto bg-black mb-6"></div>
+                {/* <p className="text-xl font-bold uppercase tracking-wider text-black"></p> */}
+            </div>
+
             <div className="flex flex-col items-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-stretch">
                     <Card className="flex flex-col h-full border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff]">
