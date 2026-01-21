@@ -80,7 +80,7 @@ function Contact() {
                         </Button>
                     </CardFooter>
                 </Card>
-             </div>
+            </div>
         </section >
     )
 }

@@ -7,9 +7,6 @@ function About() {
             <div className="text-center mb-16">
                 <h2 className="text-5xl md:text-6xl font-black mb-4 text-black">ОБО МНЕ</h2>
                 <div className="h-1 w-64 mx-auto bg-black mb-8"></div>
-                <p className="text-2xl font-bold uppercase tracking-wider text-black">
-                    ОТ C++ ДО ВЕБ-РАЗРАБОТКИ
-                </p>
             </div>
 
             <div className="flex flex-col lg:flex-row gap-12 items-center">
