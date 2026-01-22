@@ -8,7 +8,6 @@ function Project() {
             <div className="text-center mb-12">
                 <h2 className="text-5xl md:text-6xl font-black mb-4 text-black">ПРОЕКТЫ</h2>
                 <div className="h-1 w-48 mx-auto bg-black mb-6"></div>
-                {/* <p className="text-xl font-bold uppercase tracking-wider text-black"></p> */}
             </div>
 
             <div className="flex flex-col items-center">
@@ -39,7 +38,7 @@ function Project() {
                             <p>Содержимое карточки в минималистичном стиле</p>
                         </CardContent>
                         <CardFooter className="mt-auto pt-4">
-                            <Button asChild className="bg-white dark:bg-black text-black dark:text-white border-2 border-black dark:border-white hover:bg-gray-100 dark:hover:bg-gray-900 w-full py-4 text-base font-bold">
+                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 border-black dark:border-white hover:bg-gray-900 dark:hover:bg-gray-100 w-full py-4 text-base font-bold">
                                 <a href="link" target="_blank" rel="noopener norefrrer" className="flex items-center justify-center gap-2">
                                     <ExternalLink className="w-4 h-4" />
                                     Перейти
@@ -65,6 +64,15 @@ function Project() {
                         </CardFooter>
                     </Card>
                 </div>
+
+                {/* Кнопка с другими проектами */}
+                <Button asChild className="bg-white dark:bg-black text-black dark:text-white border-2 border-black dark:border-white hover:bg-gray-100 dark:hover:bg-gray-900 w-full h-15 py-4 text-base font-bold">
+                    <a href="link" target="_blank" className="flex items-center justify-center gap-2">
+                        <ExternalLink className="w-6 h-6" />
+                        Смотреть другие проекты
+                    </a>
+                </Button>
+
             </div>
         </section >
     )
