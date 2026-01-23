@@ -10,7 +10,7 @@ import Contact from './components/Contact/Contact'
 
 function App() {
     return (
-        <div className="min-h-screen bg-white">
+        <div className="min-h-screen bg-white dark:bg-black">
             {/* Зимний снег */}
             <Snow />
 

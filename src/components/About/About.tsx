@@ -5,8 +5,8 @@ function About() {
     return (
         <section id="about" className="container mx-auto px-4 py-20">
             <div className="text-center mb-16">
-                <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 text-black">ОБО МНЕ</h2>
-                <div className="h-1 w-48 sm:w-64 mx-auto bg-black mb-8"></div>
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-black mb-4 text-black dark:text-white">ОБО МНЕ</h2>
+                <div className="h-1 w-48 sm:w-64 mx-auto bg-black dark:bg-white mb-8"></div>
             </div>
 
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
