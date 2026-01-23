@@ -1,7 +1,7 @@
 function Hero() {
     return (
         <section className="min-h-[90vh] flex items-center justify-center px-4">
-            <div className="text-center max-w-4xl border-4 border-black dark:border-white p-6 sm:p-8 lg:p-10 md:p-12 bg-white dark:bg-black space-y-8">
+            <div className="text-center max-w-4xl border-2 border-black dark:border-white bg-white dark:bg-black shadow-[6px_6px_0_#000] dark:shadow-[6px_6px_0_#fff] p-6 sm:p-8 lg:p-10 md:p-12 bg-white dark:bg-black space-y-8">
                 <div className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-none tracking-widest">
                     REDDBOY
                 </div>
