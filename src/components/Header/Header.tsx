@@ -58,8 +58,8 @@ function Header() {
                             <a href="#tech" className="font-bold uppercase tracking-widest py-2">
                                 ТЕХНОЛОГИИ
                             </a>
-                            <a href="#contact" className="font-bold uppercase tracking-widest py-2">
-                                КОНТАКТ
+                            <a href="#contacts" className="font-bold uppercase tracking-widest py-2">
+                                КОНТАКТЫ
                             </a>
                         </div>
                     </div>

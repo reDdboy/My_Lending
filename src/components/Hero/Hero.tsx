@@ -1,32 +1,39 @@
-function Hero() {
-    return (
-        <section className="min-h-[90vh] flex items-center justify-center px-4">
-            <div className="text-center max-w-4xl border-2 border-black dark:border-white bg-white dark:bg-black shadow-[6px_6px_0_#000] dark:shadow-[6px_6px_0_#fff] p-6 sm:p-8 lg:p-10 md:p-12 bg-white dark:bg-black space-y-8">
-                <div className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-none tracking-widest">
-                    REDDBOY
-                </div>
-                <div className="h-2 w-3/4 mx-auto bg-black dark:bg-white"></div>
-                <p className="text-2xl font-bold uppercase">
-                    ВЕБ-РАЗРАБОТЧИК
-                </p>
-                {/* <p className="text-lg max-w-2xl mx-auto font-medium">
-                    Студент факультета информатики и прикладной математики
-                </p> */}
-                <div className="flex flex-col sm:flex-row gap-4 justify-center pt-6">
-                    <button className="px-6 md:px-10 py-2 md:py-4 bg-black dark:bg-white text-white dark:text-black text-lg font-bold border-2 border-black dark:border-white hover:translate-y-0.5 transition-transform">
-                        <a href="#projects" className="font-bold items-center justify-center gap-2">
-                            СМОТРЕТЬ ПРОЕКТЫ
-                        </a>
-                    </button>
-                    <button className="px-6 md:px-10 py-4 md:py-6 bg-white dark:bg-black text-black dark:text-white text-lg font-bold border-2 border-black dark:border-white hover:translate-y-0.5 transition-transform">
-                        <a href="#contacts" className="items-center justify-center gap-2">
-                            СВЯЗАТЬСЯ
-                        </a>
-                    </button>
-                </div>
-            </div>
-        </section>
-    )
-}
+import React from 'react';
+import { Card, CardContent, CardHeader } from "@/components/ui/card";
 
-export default Hero
+const Hero: React.FC = () => {
+    return (
+        <section className="container mx-auto min-h-[70vh] sm:min-h-[80vh] md:min-h-[90vh] flex items-center justify-center px-4 py-16 md:py-20">
+            <Card className="w-full max-w-4xl border-2 border-black dark:border-white bg-white dark:bg-black shadow-[8px_8px_0_#000] dark:shadow-[8px_8px_0_#fff] p-6 sm:p-8 md:p-10 lg:p-12 space-y-6 sm:space-y-8">
+                <CardHeader className="p-0 space-y-6 text-center">
+                    <h1 className="text-5xl xs:text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-widest text-black dark:text-white">
+                        REDDBOY
+                    </h1>
+
+                    <div className="h-2 w-3/5 sm:w-3/4 mx-auto bg-black dark:bg-white" />
+                    <p className=" text-xl sm:text-2xl md:text-3xl font-black uppercase tracking-widest text-black dark:text-white">
+                        ВЕБ-РАЗРАБОТЧИК
+                    </p>
+                </CardHeader>
+
+                <CardContent className="p-0 pt-4 sm:pt-6">
+                    <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center">
+                        <button className="px-6 sm:px-8 md:px-10 py-3 sm:py-4 bg-black dark:bg-white text-white dark:text-black text-base sm:text-lg md:text-xl font-black border-2 border-gray/50 dark:border-white hover:translate-y-[-2px] transition-all duration-200 uppercase tracking-widest">
+                            <a href="#projects" className="flex items-center justify-center gap-2">
+                                СМОТРЕТЬ ПРОЕКТЫ
+                            </a>
+                        </button>
+
+                        <button className=" px-6 sm:px-8 md:px-10 py-3 sm:py-4 bg-white dark:bg-black text-black dark:text-white text-base sm:text-lg md:text-xl font-black border-2 border-black dark:border-white hover:translate-y-[-2px] transition-all duration-200 uppercase tracking-widest">
+                            <a href="#contacts" className="flex items-center justify-center gap-2">
+                                СВЯЗАТЬСЯ
+                            </a>
+                        </button>
+                    </div>
+                </CardContent>
+            </Card>
+        </section>
+    );
+};
+
+export default Hero;
