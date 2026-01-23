@@ -63,21 +63,9 @@ function Project() {
                             </Button>
                         </CardFooter>
                     </Card>
-
-                    <Card className="flex flex-col h-full border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff]">
-                        <CardContent className="mt-auto pt-4">
-                            {/* Кнопка с другими проектами */}
-                            <Button asChild className="bg-black text-white dark:bg-white dark:text-black border-2 border-black dark:border-white hover:bg-gray-900 dark:hover:bg-gray-100 w-full py-4 text-base font-bold">
-                                <a href="link" target="_blank" className="flex items-center justify-center gap-2">
-                                    <ExternalLink className="w-4 h-4" />
-                                    Смотреть другие проекты
-                                </a>
-                            </Button>
-                        </CardContent>
-                    </Card>
                 </div>
             </div>
-        </section >
+        </section>
     )
 }
 
