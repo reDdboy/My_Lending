@@ -16,7 +16,7 @@ function Header() {
             <nav className="container mx-auto px-4 py-4">
                 <div className="flex justify-between items-center">
                     <div className="flex items-center space-x-2">
-                        <div className="w-10 h-10 bg-black dark:bg-white flex items-center justify-center border-2 border-black dark:border-white brutal-shadow-sm">
+                        <div className="w-10 h-10 bg-black dark:bg-white flex items-center justify-center border-2 border-black dark:border-whit">
                             <span className="text-white dark:text-black font-bold text-xl">R</span>
                         </div>
                         <span className="font-black text-xl tracking-widest">REDDBOY</span>
@@ -30,9 +30,9 @@ function Header() {
                         <a href="#projects" className="font-bold text-sm uppercase tracking-widest hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
                             ПРОЕКТЫ
                         </a>
-                        <a href="#tech" className="font-bold text-sm uppercase tracking-widest hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                        {/* <a href="#tech" className="font-bold text-sm uppercase tracking-widest hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
                             ТЕХНОЛОГИИ
-                        </a>
+                        </a> */}
                         <a href="#contacts" className="font-bold text-sm uppercase tracking-widest hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
                             КОНТАКТЫ
                         </a>
@@ -61,9 +61,9 @@ function Header() {
                             <a href="#projects" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
                                 ПРОЕКТЫ
                             </a>
-                            <a href="#tech" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
+                            {/* <a href="#tech" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
                                 ТЕХНОЛОГИИ
-                            </a>
+                            </a> */}
                             <a href="#contacts" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
                                 КОНТАКТЫ
                             </a>

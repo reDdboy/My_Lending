@@ -18,6 +18,41 @@ li {
     margin-inline-start: 5px;
 }
 
+* {
+    text-transform: uppercase;
+}
+
+.hero__button-projects,
+.hero__button-contact {
+    transition: .15s ease-in-out;
+}
+
+.hero__button-projects:is(:hover, :focus-visible, :active) {
+    box-shadow: 4px 4px #000;
+}
+
+.hero__button-contact:is(:hover, :focus-visible, :active) {
+    box-shadow: 4px 4px #000;
+}
+
+.dark .hero__button-projects:is(:hover, :focus-visible, :active) {
+    box-shadow: 4px 4px #fff;
+}
+
+.dark .hero__button-contact:is(:hover, :focus-visible, :active) {
+    box-shadow: 4px 4px #fff;
+}
+
+::selection {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+.dark ::selection {
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
 h1,
 h2,
 h3,
@@ -32,8 +67,12 @@ h1 {
     text-shadow: 2px 0px 0 #000;
 }
 
-p {
+/* p {
     letter-spacing: 0.1em;
+} */
+
+.leading-relaxed {
+    text-transform: math-auto;
 }
 
 a:link {
@@ -54,6 +93,10 @@ body {
 
 .brutal-shadow-sm {
     box-shadow: 2px 2px 0 #000;
+}
+
+.brutal-shadow- {
+    box-shadow: 2px 2px 0;
 }
 
 @layer base {

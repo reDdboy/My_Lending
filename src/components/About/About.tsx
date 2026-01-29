@@ -37,7 +37,7 @@ function About() {
                                     далее в обучающей программе появился предмет с изучением основ <span className="font-bold text-black dark:text-white">PHP, CSS, HTML</span>.
                                 </p>
                             </div>
-                            <p className="text-base md:text-lg text-gray-800 dark:text-gray-300 leading-relaxed font-bold">
+                            <p className="text-base md:text-lg text-gray-800 dark:text-gray-300 leading-relaxed">
                                 Вот тогда я для себя и определил в какую сторону буду дальше двигаться и развиваться.
                             </p>
                         </div>
