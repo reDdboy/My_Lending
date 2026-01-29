@@ -11,7 +11,7 @@ function About() {
 
             <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
                 {/* Левая часть - текст */}
-                <Card className="lg:flex-1 border-2 border-black dark:border-white bg-white dark:bg-black shadow-[6px_6px_0_#000] dark:shadow-[6px_6px_0_#fff] p-6 md:p-8">
+                <Card className="lg:flex-1 border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff] p-6 md:p-8">
                     <CardHeader className="pb-6">
                         <div className="flex flex-col sm:flex-row items-center sm:items-start gap-6 mb-6">
                             <div className="w-16 h-16 bg-black dark:bg-white flex items-center justify-center flex-shrink-0">
