@@ -5,6 +5,12 @@ import ThemeToggle from "../ThemeToggle/ThemeToggle"
 function Header() {
     const [isOpen, setIsOpen] = useState(false)
 
+    const handleClick = () => {
+        setIsOpen(false)
+
+
+    }
+
     return (
         <header className="fixed top-0 w-full z-50 bg-white dark:bg-black text-black dark:text-white border-b border-gray-300 dark:border-gray-800 backdrop-blur-sm bg-white/80 dark:bg-black/80">
             <nav className="container mx-auto px-4 py-4">
@@ -49,16 +55,16 @@ function Header() {
                 {isOpen && (
                     <div className="md:hidden mt-4 pb-4 border-t border-gray-300 dark:border-gray-800 pt-4">
                         <div className="flex flex-col space-y-4">
-                            <a href="#about" className="font-bold uppercase tracking-widest py-2">
+                            <a href="#about" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
                                 ОБО МНЕ
                             </a>
-                            <a href="#projects" className="font-bold uppercase tracking-widest py-2">
+                            <a href="#projects" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
                                 ПРОЕКТЫ
                             </a>
-                            <a href="#tech" className="font-bold uppercase tracking-widest py-2">
+                            <a href="#tech" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
                                 ТЕХНОЛОГИИ
                             </a>
-                            <a href="#contacts" className="font-bold uppercase tracking-widest py-2">
+                            <a href="#contacts" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
                                 КОНТАКТЫ
                             </a>
                         </div>
