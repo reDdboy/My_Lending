@@ -30,9 +30,9 @@ function Header() {
                         <a href="#projects" className="font-bold text-sm uppercase tracking-widest hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
                             ПРОЕКТЫ
                         </a>
-                        {/* <a href="#tech" className="font-bold text-sm uppercase tracking-widest hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+                        <a href="#tech" className="font-bold text-sm uppercase tracking-widest hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
                             ТЕХНОЛОГИИ
-                        </a> */}
+                        </a>
                         <a href="#contacts" className="font-bold text-sm uppercase tracking-widest hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
                             КОНТАКТЫ
                         </a>
@@ -61,9 +61,9 @@ function Header() {
                             <a href="#projects" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
                                 ПРОЕКТЫ
                             </a>
-                            {/* <a href="#tech" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
+                            <a href="#tech" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
                                 ТЕХНОЛОГИИ
-                            </a> */}
+                            </a>
                             <a href="#contacts" className="font-bold uppercase tracking-widest py-2" onClick={handleClick}>
                                 КОНТАКТЫ
                             </a>

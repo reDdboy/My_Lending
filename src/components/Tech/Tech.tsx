@@ -45,7 +45,6 @@ function Tech() {
                 <div className="h-1 w-48 sm:w-64 mx-auto bg-black dark:bg-white mb-8"></div>
             </div>
 
-            {/* ОДНА БОЛЬШАЯ КАРТОЧКА */}
             <Card className="border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff]">
                 <CardContent className="p-6 sm:p-8">
                     {/* Сетка технологий внутри карточки */}
@@ -56,7 +55,7 @@ function Tech() {
                                 className="flex flex-col items-center p-4 border-2 border-black dark:border-white bg-white dark:bg-black"
                             >
                                 {/* Иконка в квадрате */}
-                                <div className="w-16 h-16 sm:w-20 sm:h-20 mb-4 bg-black dark:bg-white border-2 border-black dark:border-white flex items-center justify-center">
+                                <div className="w-16 h-16 sm:w-20 sm:h-20 mb-4 bg-black dark:bg-white flex items-center justify-center">
                                     <div className="text-white dark:text-black">
                                         {tech.icon}
                                     </div>
@@ -66,11 +65,6 @@ function Tech() {
                                 <div className="text-center">
                                     <div className="text-lg sm:text-xl font-black text-black dark:text-white uppercase tracking-wide">
                                         {tech.name}
-                                    </div>
-
-                                    {/* Простой индикатор */}
-                                    <div className="mt-2 w-full h-2 bg-gray-300 dark:bg-gray-800 border border-black dark:border-white overflow-hidden">
-                                        <div className="h-full bg-black dark:bg-white"></div>
                                     </div>
                                 </div>
                             </div>
