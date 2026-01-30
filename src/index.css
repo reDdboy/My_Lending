@@ -99,6 +99,24 @@ body {
     box-shadow: 2px 2px 0;
 }
 
+.cursor-blink {
+    animation: cursor-blink 1s infinite;
+    font-weight: bold;
+}
+
+@keyframes cursor-blink {
+
+    0%,
+    50% {
+        opacity: 1;
+    }
+
+    51%,
+    100% {
+        opacity: 0;
+    }
+}
+
 @layer base {
     :root {
         --background: 0 0% 100%;
@@ -175,7 +193,12 @@ body {
         --ring: 0 0% 83.1%;
     }
 
-    html,
+    html {
+        height: 100%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
     body {
         height: 100%;
         overflow-x: hidden;

@@ -35,10 +35,10 @@ function Snow() {
     return (
         <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
             <Snowfall
-                snowflakeCount={100}
+                snowflakeCount={50}
                 speed={[0.5, 2]}
                 wind={[-0.5, 0.8]}
-                radius={[0.5, 3.0]}
+                radius={[0.5, 2.5]}
                 color={snowColor}
                 style={{
                     position: 'absolute',
