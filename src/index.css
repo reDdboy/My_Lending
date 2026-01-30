@@ -28,7 +28,7 @@ li {
 }
 
 .hero__button-projects:is(:hover, :focus-visible, :active) {
-    box-shadow: 4px 4px #000;
+    box-shadow: 4px 4px #929292;
 }
 
 .hero__button-contact:is(:hover, :focus-visible, :active) {
@@ -36,7 +36,7 @@ li {
 }
 
 .dark .hero__button-projects:is(:hover, :focus-visible, :active) {
-    box-shadow: 4px 4px #fff;
+    box-shadow: 4px 4px #6c6c6c;
 }
 
 .dark .hero__button-contact:is(:hover, :focus-visible, :active) {
