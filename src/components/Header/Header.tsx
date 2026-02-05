@@ -7,8 +7,6 @@ function Header() {
 
     const handleClick = () => {
         setIsOpen(false)
-
-
     }
 
     return (
