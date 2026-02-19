@@ -67,10 +67,6 @@ h1 {
     text-shadow: 2px 0px 0 #000;
 }
 
-/* p {
-    letter-spacing: 0.1em;
-} */
-
 .leading-relaxed {
     text-transform: math-auto;
 }
@@ -101,17 +97,21 @@ body {
 
 .cursor-blink {
     animation: cursor-blink 1s infinite;
-    font-weight: bold;
 }
 
 @keyframes cursor-blink {
 
     0%,
-    50% {
+    60% {
         opacity: 1;
     }
 
-    51%,
+    61%,
+    66% {
+        opacity: 0.5;
+    }
+
+    67%,
     100% {
         opacity: 0;
     }
@@ -209,11 +209,9 @@ body {
         min-height: 100vh;
     }
 
-    /* Если hero всё равно толкает — можно добавить отрицательный отступ, но осторожно */
     @media (max-width: 640px) {
         main {
             margin-top: -1rem;
-            /* очень маленький отрицательный отступ, если нужно */
         }
     }
 }

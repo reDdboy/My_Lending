@@ -102,10 +102,10 @@ function About() {
                                     <div className="w-2 h-2 bg-black dark:bg-white"></div>
                                     <p className="font-bold text-sm md:text-base text-black dark:text-white">HTML/CSS</p>
                                 </div>
-                                <div className="flex items-center gap-3">
+                                {/* <div className="flex items-center gap-3">
                                     <div className="w-2 h-2 bg-black dark:bg-white"></div>
                                     <p className="font-bold text-sm md:text-base text-black dark:text-white">MODERN WEB</p>
-                                </div>
+                                </div> */}
                             </div>
                         </CardContent>
                     </Card>
@@ -131,7 +131,7 @@ function About() {
                     </Card>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 

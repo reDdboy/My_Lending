@@ -17,7 +17,7 @@ function Header() {
                         <div className="w-10 h-10 bg-black dark:bg-white flex items-center justify-center border-2 border-black dark:border-whit">
                             <span className="text-white dark:text-black font-bold text-xl">R</span>
                         </div>
-                        <span className="font-black text-xl tracking-widest">REDDBOY</span>
+                        <span className="font-black text-xl tracking-widest">REDDBOY<span className="cursor-blink">_</span></span>
                     </div>
 
                     {/* Десктопное меню */}
