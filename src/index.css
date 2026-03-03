@@ -102,16 +102,26 @@ body {
 @keyframes cursor-blink {
 
     0%,
-    60% {
+    25% {
         opacity: 1;
     }
 
-    61%,
-    66% {
+    25%,
+    50% {
+        opacity: 0.75;
+    }
+
+    50%,
+    67% {
         opacity: 0.5;
     }
 
     67%,
+    75% {
+        opacity: 0.25;
+    }
+
+    76%,
     100% {
         opacity: 0;
     }
@@ -150,12 +160,10 @@ body {
         --destructive-foreground: 0 0% 98%;
 
         --border: 0 0% 0%;
-        /* black border */
         --input: 0 0% 0%;
         --ring: 0 0% 0%;
 
         --radius: 0;
-        /* если хочешь острые углы */
     }
 
     .dark {
