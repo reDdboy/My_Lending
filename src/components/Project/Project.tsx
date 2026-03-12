@@ -23,7 +23,7 @@ function Project() {
         {
             title: "Todo List",
             subtitle: "Простенький лист задач",
-            description: "Сайт для добавления задач на день",
+            description: "Сайт для добавления задач на день.",
             link: "https://todo.reddboy.ru",
             linkText: "Перейти",
         }
@@ -39,7 +39,7 @@ function Project() {
             <div className="flex flex-col items-center">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-stretch">
                     {projects.map((project, idx) => (
-                        < Card key={idx} className="flex flex-col h-full border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff]">
+                        < Card key={idx} className="flex flex-col w-full h-full border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff]">
                             <CardHeader>
                                 <CardTitle className="text-2xl font-black"> {project.title} </CardTitle>
                                 <CardDescription className="font-bold"> {project.subtitle} </CardDescription>
