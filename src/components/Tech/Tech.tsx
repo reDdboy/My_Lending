@@ -7,6 +7,7 @@ import {
     Brackets,
     Database
 } from "lucide-react"
+import React from "react"
 
 function Tech() {
     const technologies = [
