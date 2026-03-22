@@ -26,7 +26,17 @@ function Project() {
             description: "Сайт для добавления задач на день.",
             link: "https://todo.reddboy.ru",
             linkText: "Перейти",
-        }
+        },
+    ]
+
+    const moreProjects = [
+        {
+            title: "Другие проекты",
+            subtitle: "Информация про другие проекты",
+            description: "",
+            link: "/MoreProject",
+            linkText: "Смотреть",
+        },
     ]
 
     return (
@@ -37,9 +47,9 @@ function Project() {
             </div>
 
             <div className="flex flex-col items-center">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-stretch">
+                <div className="grid grid-cols-1s md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center items-stretch">
                     {projects.map((project, idx) => (
-                        < Card key={idx} className="flex flex-col w-full h-full border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff]">
+                        <Card key={idx} className="flex flex-col w-full h-full border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff]">
                             <CardHeader>
                                 <CardTitle className="text-2xl font-black"> {project.title} </CardTitle>
                                 <CardDescription className="font-bold"> {project.subtitle} </CardDescription>
@@ -52,6 +62,26 @@ function Project() {
                                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 text-black dark:text-white">
                                         <ExternalLink className="w-4 h-4" />
                                         {project.linkText}
+                                    </a>
+                                </Button>
+                            </CardFooter>
+                        </Card>
+                    ))}
+
+                    {moreProjects.map((more, idx) => (
+                        <Card key={idx} className="flex flex-col w-full h-full border-2 border-black dark:border-white bg-white dark:bg-black shadow-[4px_4px_0_#000] dark:shadow-[4px_4px_0_#fff]">
+                            <CardHeader>
+                                <CardTitle className="text-2xl font-black"> {more.title} </CardTitle>
+                                <CardDescription className="font-bold"> {more.subtitle} </CardDescription>
+                            </CardHeader>
+                            <CardContent className="flex-grow">
+                                <p> {more.description} </p>
+                            </CardContent>
+                            <CardFooter className="mt-auto pt-4">
+                                <Button asChild className="bg-white dark:bg-black text-black dark:text-white border-2 border-black dark:border-white hover:bg-gray-100 dark:hover:bg-gray-900 w-full py-4 text-base font-bold">
+                                    <a href={more.link} className="flex items-center justify-center gap-2 text-black dark:text-white">
+                                        <ExternalLink className="w-4 h-4" />
+                                        {more.linkText}
                                     </a>
                                 </Button>
                             </CardFooter>

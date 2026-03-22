@@ -14,22 +14,22 @@ function Contact() {
             logo: Send,
         },
         {
-            title: "EMAIL",
-            subtitle: "rephose@mail.ru",
-            description:
-                "Для официальных предложений, документов и сотрудничества",
-            link: "mailto: rephose@mail.ru",
-            linkText: "Перейти",
-            logo: Mail,
-        },
-        {
             title: "GITHUB",
             subtitle: "github.com/reDdboy",
             description: "Портфолио проектов, исходный код и технические решения",
             link: "https://github.com/reDdboy",
             linkText: "Перейти",
             logo: Github,
-        }
+        },
+        {
+            title: "EMAIL",
+            subtitle: "rephose@mail.ru",
+            description:
+                "Для официальных предложений, документов и сотрудничества",
+            link: "mailto: rephose@mail.ru",
+            linkText: "Написать",
+            logo: Mail,
+        },
     ]
 
     return (
