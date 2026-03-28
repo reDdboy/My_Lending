@@ -7,7 +7,6 @@ import Project from './components/Project/Project'
 import Tech from './components/Tech/Tech'
 import Contact from './components/Contact/Contact'
 
-
 function App() {
     return (
         <div className="min-h-screen bg-white dark:bg-black">
