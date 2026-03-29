@@ -32,7 +32,7 @@ function MoreProject() {
     ];
 
     return (
-        <section className="min-h-screen py-20 px-4 bg-white dark:bg-black">
+        <section className="min-h-screen py-10 px-4 bg-white dark:bg-black">
             <div className="container mx-auto max-w-6xl">
                 <Link
                     to="/"
