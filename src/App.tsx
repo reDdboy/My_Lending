@@ -1,42 +1,31 @@
-import Header from './components/Header/Header'
-import Footer from './components/Footer/Footer'
-import About from './components/About/About'
-import Snow from './components/Snow/Snow'
-import Hero from './components/Hero/Hero'
-import Project from './components/Project/Project'
-import Tech from './components/Tech/Tech'
-import Contact from './components/Contact/Contact'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Footer from './components/Footer/Footer';
+import Snow from './components/Snow/Snow';
+
+import Home from './pages/Home';
+import MoreProject from './pages/MoreProject';
 
 function App() {
     return (
-        <div className="min-h-screen bg-white dark:bg-black">
-            {/* Зимний снег */}
-            <Snow />
+        <Router>
+            <div className="min-h-screen bg-white dark:bg-black">
+                {/* Зимний снег */}
+                <Snow />
 
-            {/* Шапка */}
-            <Header />
+                <Routes>
+                    {/* Главная страница */}
+                    <Route path="/" element={<Home />} />
 
-            <main>
-                {/* Блок Герой */}
-                <Hero />
+                    {/* Страница других проектов */}
+                    <Route path="/MoreProject" element={<MoreProject />} />
+                </Routes>
 
-                {/* Обо мне */}
-                <About />
-
-                {/* Блок с проектами */}
-                <Project />
-
-                {/* Блок с технологиями */}
-                <Tech />
-
-                {/* Блок с контактами */}
-                <Contact />
-            </main>
-
-            {/* Подвал */}
-            <Footer />
-        </div>
-    )
+                {/* Подвал */}
+                <Footer />
+            </div>
+        </Router>
+    );
 }
 
-export default App
+export default App;
