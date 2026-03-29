@@ -1,0 +1,11 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Не перезаписываем реальные файлы и папки (css, js, изображения и т.д.)
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    # Всё остальное отдаём index.html — React Router сам разберётся
+    RewriteRule ^ index.html [L]
+</IfModule>
