@@ -1,7 +1,8 @@
-import { ArrowLeft } from "lucide-react";
-import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react"
+import { Link } from "react-router-dom"
+import ThemeToggle from "../components/ThemeToggle/ThemeToggle"
 
-import { SpotlightCard } from "../components/Project/Project";
+import { SpotlightCard } from "../components/Project/Project"
 
 function MoreProject() {
     const moreProjects = [
@@ -34,13 +35,16 @@ function MoreProject() {
     return (
         <section className="min-h-screen py-10 px-4 bg-white dark:bg-black">
             <div className="container mx-auto max-w-6xl">
-                <Link
-                    to="/"
-                    className="inline-flex items-center gap-3 text-lg font-medium text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 mb-12 transition-colors group"
-                >
-                    <ArrowLeft className="w-6 h-6 group-hover:-translate-x-0.5 transition-transform" />
-                    Вернуться на главную
-                </Link>
+                <div className="flex justify-between ">
+                    <Link
+                        to="/"
+                        className="inline-flex items-center gap-3 text-lg font-medium text-black dark:text-white hover:text-gray-600 dark:hover:text-gray-300 mb-12 transition-colors group"
+                    >
+                        <ArrowLeft className="w-6 h-6 group-hover:-translate-x-0.5 transition-transform" />
+                        Вернуться на главную
+                    </Link>
+                    <ThemeToggle />
+                </div>
 
                 {/* Заголовок */}
                 <div className="text-center mb-16">
