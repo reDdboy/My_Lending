@@ -18,7 +18,8 @@ function App() {
                     <Route path="/" element={<Home />} />
 
                     {/* Страница других проектов */}
-                    <Route path="/MoreProject" element={<MoreProject />} />
+                    <Route path="/projects" element={<MoreProject />} />
+                    <Route path="*" element={<Home />} />
                 </Routes>
 
                 {/* Подвал */}

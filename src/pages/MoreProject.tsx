@@ -4,7 +4,7 @@ import ThemeToggle from "../components/ThemeToggle/ThemeToggle"
 
 import { SpotlightCard } from "../components/Project/Project"
 
-function MoreProject() {
+export default function MoreProject() {
     const moreProjects = [
         {
             title: "Название",
@@ -67,5 +67,3 @@ function MoreProject() {
         </section>
     );
 }
-
-export default MoreProject;

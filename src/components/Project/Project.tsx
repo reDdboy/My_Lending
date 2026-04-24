@@ -62,7 +62,7 @@ function SpotlightCard({ project }: { project: ProjectData }) {
 function Project() {
     const projects: ProjectData[] = [
         {
-            title: "ДОКУМЕНТАЦИЯ ВКОНКТАКТЕ",
+            title: "ДОКУМЕНТАЦИЯ ВКОНТАКТЕ",
             subtitle: "Сайт с документацией",
             description:
                 "Вместе с командой работаем над реализацией и поддержкой Базы Данных «За Христа Пострадавшие» для разных платформ.",
@@ -117,7 +117,7 @@ function Project() {
                                 subtitle: "",
                                 description:
                                     "Здесь собраны все другие разрабатываемые проекты.",
-                                link: "/MoreProject",
+                                link: "/projects",
                                 linkText: "Смотреть",
                                 external: false,
                             }}
