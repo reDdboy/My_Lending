@@ -1,11 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
-import { Code2, Terminal, FileCode, Cpu, Brackets, Database } from "lucide-react"
 import { useSpotlight } from "@/hooks/useSpotlight"
-
-type TechData = {
-    name: string
-    icon: React.ReactNode
-}
+import type { TechData } from "@/data/tech"
+import { technologies } from "@/data/tech"
 
 function SpotlightTechCard({ name, icon }: TechData) {
     const { onMouseMove, onMouseLeave } = useSpotlight()
@@ -44,14 +40,6 @@ function SpotlightTechCard({ name, icon }: TechData) {
 }
 
 function Tech() {
-    const technologies: TechData[] = [
-        { name: "JAVASCRIPT", icon: <Code2 className="w-6 h-6 sm:w-8 sm:h-8" /> },
-        { name: "TYPESCRIPT", icon: <Terminal className="w-6 h-6 sm:w-8 sm:h-8" /> },
-        { name: "C++", icon: <Cpu className="w-6 h-6 sm:w-8 sm:h-8" /> },
-        { name: "HTML", icon: <FileCode className="w-6 h-6 sm:w-8 sm:h-8" /> },
-        { name: "CSS", icon: <Brackets className="w-6 h-6 sm:w-8 sm:h-8" /> },
-        { name: "PHP", icon: <Database className="w-6 h-6 sm:w-8 sm:h-8" /> },
-    ]
 
     return (
         <section id="tech" className="container mx-auto px-4 py-20">

@@ -6,8 +6,17 @@ interface ProjectProps {
     showOtherProjects?: boolean
 }
 
-function Project({ limit, showOtherProjects = true }: ProjectProps) {
+function Project({ limit = 3, showOtherProjects = true }: ProjectProps) {
     const projectsToShow = limit ? projects.slice(0, limit) : projects;
+
+    const getGridCols = () => {
+        const count = projectsToShow.length;
+        if (count <= 2) return "grid-cols-1 md:grid-cols-2 max-w-3xl mx-auto";
+        if (count === 3) return "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+        if (count === 4) return "grid-cols-1 md:grid-cols-2 max-w-4xl mx-auto";
+        if (count <= 6) return "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+        return "grid-cols-1 md:grid-cols-2 lg:grid-cols-3";
+    };
 
     return (
         <section id="projects" className="container mx-auto px-4 py-20">
@@ -16,9 +25,11 @@ function Project({ limit, showOtherProjects = true }: ProjectProps) {
                 <div className="h-1 w-48 mx-auto bg-black dark:bg-white mb-6"></div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
+            <div className={`grid ${getGridCols()} gap-6 md:gap-8 mb-20`}>
                 {projectsToShow.map((project, idx) => (
-                    <SpotlightCard key={idx} project={project} />
+                    <div key={idx} className="flex h-full">
+                        <SpotlightCard project={project} />
+                    </div>
                 ))}
             </div>
             {showOtherProjects && (

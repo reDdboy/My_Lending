@@ -1,16 +1,9 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Send, Mail, Github, ExternalLink } from "lucide-react"
+import { ExternalLink } from "lucide-react"
 import { useSpotlight } from "@/hooks/useSpotlight"
-
-type ContactData = {
-    title: string
-    subtitle: string
-    description: string
-    link: string
-    linkText: string
-    logo: React.ElementType
-}
+import type { ContactData } from "@/data/contacts"
+import { contacts } from "@/data/contacts"
 
 function SpotlightContactCard({ title, subtitle, description, link, linkText, logo: Logo }: ContactData) {
     const { onMouseMove, onMouseLeave } = useSpotlight()
@@ -57,33 +50,6 @@ function SpotlightContactCard({ title, subtitle, description, link, linkText, lo
 }
 
 function Contact() {
-    const contacts: ContactData[] = [
-        {
-            title: "Telegram",
-            subtitle: "@pust0tta",
-            description: "Быстрые ответы, обсуждение проектов и оперативная связь",
-            link: "https://t.me/pust0tta",
-            linkText: "Написать",
-            logo: Send,
-        },
-        {
-            title: "GITHUB",
-            subtitle: "github.com/reDdboy",
-            description: "Портфолио проектов, исходный код и технические решения",
-            link: "https://github.com/reDdboy",
-            linkText: "Перейти",
-            logo: Github,
-        },
-        {
-            title: "EMAIL",
-            subtitle: "rephose@mail.ru",
-            description: "Для официальных предложений, документов и сотрудничества",
-            link: "mailto:rephose@mail.ru",
-            linkText: "Написать",
-            logo: Mail,
-        },
-    ]
-
     return (
         <section id="contacts" className="container mx-auto px-4 py-20">
             <div className="text-center mb-12">
