@@ -18,7 +18,7 @@ function Home() {
             <About />
 
             {/* Блок с проектами */}
-            <Project />
+            <Project limit={3} showOtherProjects={true} />
 
             {/* Блок с технологиями */}
             <Tech />

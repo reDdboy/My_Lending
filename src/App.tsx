@@ -4,7 +4,7 @@ import Footer from './components/Footer/Footer';
 import Snow from './components/Snow/Snow';
 
 import Home from './pages/Home';
-import MoreProject from './pages/MoreProject';
+import MoreProject from "./pages/MoreProject";
 
 function App() {
     return (
